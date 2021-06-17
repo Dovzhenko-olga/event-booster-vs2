@@ -1,0 +1,137 @@
+// mobile
+.logo {
+  position: absolute;
+  top: 0px;
+}
+
+.logo-img {
+  width: 107px;
+}
+
+.header-txt {
+  padding-top: 78px;
+  margin-bottom: 25px;
+  //   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 212px;
+
+  font-weight: $font-weight-black;
+  font-size: $font-size-18;
+  line-height: 1.22;
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+.background {
+  // position: absolute;
+  // top: 0px;
+  background: url(../images/pic.jpg);
+  width: 100%;
+  height: 364px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// tablet
+@media screen and (min-width: 768px) {
+  .header-txt {
+    padding-top: 40px;
+    width: 353px;
+    font-size: $font-size-30;
+  }
+  .logo-img {
+    width: 179px;
+  }
+  .background {
+    background: url(../images/pic-tablet.jpg);
+    width: 100%;
+    height: 364px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// desctop
+@media screen and (min-width: 1280px) {
+  .header-txt {
+    width: 589px;
+    font-size: $font-size-50;
+    white-space: inherit;
+  }
+
+  .logo-img {
+    width: 201px;
+  }
+  .background {
+    margin: 0 auto;
+    background: url(../images/pic-desctop.jpg);
+    max-width: 1280px;
+    height: 364px;
+    //  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.country-block {
+  position: absolute;
+  top: 187px;
+  padding-top: 45px;
+  width: 270px;
+  height: 210px;
+  background-color: $search-bg-color;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+.country-block:before {
+  display: block;
+  width: 260px;
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #cccccc;
+  top: 40px;
+  left: 5px;
+}
+.drop-counties {
+  margin-top: 6px;
+  // border-top: 1px solid #cccccc;
+  // margin-left: 30px;
+  // margin-right: 30px;
+}
+.drop-country {
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cccccc;
+}
+.drop-country:hover {
+  background-color: $title-text-color;
+}
+.drop-country:not(:last-child) {
+  margin-bottom: 2px;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent-color;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(54, 56, 58);
+}

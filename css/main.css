@@ -1,0 +1,374 @@
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 173px;
+    padding-right: 173px;
+  }
+}
+
+.header-txt {
+  position: absolute;
+  top: 0px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-left: 53px;
+  margin-right: 53px;
+  margin-top: 78px;
+  width: 212px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #dc56c5;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+}
+
+.logo-img {
+  width: 107px;
+}
+
+.background {
+  background: url(../images/pic.jpg);
+  width: 100%;
+  height: 364px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 767px) {
+  .header-txt {
+    width: 353px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    margin-left: 207px;
+    margin-right: 207px;
+  }
+  .logo-img {
+    width: 179px;
+  }
+  .background {
+    background: url(../images/pic-tablet.jpg);
+    width: 100%;
+    height: 364px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-txt {
+    font-size: 50px;
+    line-height: 61px;
+    width: 588px;
+    margin-top: 40px;
+    margin-left: 347px;
+    margin-right: 347px;
+  }
+  .logo-img {
+    width: 201px;
+  }
+  .background {
+    background: url(../images/pic-desctop.jpg);
+    width: 1280px;
+    height: 364px;
+    background-repeat: no-repeat;
+  }
+}
+
+.form {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  width: 270px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #939393;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  -webkit-transition: background 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  transition: background 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+
+.form-control:hover,
+.form-control:focus {
+  background: rgba(220, 86, 198, 0.5);
+  outline: transparent;
+}
+
+.input-blok {
+  position: relative;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form svg {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .searching-blok {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+  }
+  .form:first-child {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .searching-blok {
+    margin-top: 52px;
+  }
+}
+
+.footer {
+  background-color: #0e0e0e;
+  padding-bottom: 27px;
+}
+
+.txt-footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  width: 252px;
+  color: #939393;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.txt-heart {
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .txt-footer {
+    font-size: 16px;
+    line-height: 20px;
+    width: 521px;
+    padding-top: 60px;
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .txt-footer {
+    font-size: 16px;
+    line-height: 20px;
+    width: 521px;
+    padding-top: 85px;
+    padding-bottom: 18px;
+  }
+}
+
+.block {
+  padding-left: 25px;
+  padding-right: 15px;
+  background-color: #0e0e0e;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding-left: 85px;
+    padding-right: 73px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .block {
+    padding-left: 173px;
+    padding-right: 161px;
+  }
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -2px;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    margin: 0 -6px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .list {
+    margin: 0 -28px;
+  }
+}
+
+.events {
+  margin: 0px 2px 30px 2px;
+  width: calc((100% - 2px * 4) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .events {
+    margin: 0px 6px 45px 6px;
+    width: calc((100% - 6px * 6) / 3);
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .events {
+    margin: 0px 28px 50px 28px;
+    width: calc((100% - 28px * 8) / 4);
+  }
+}
+
+.card {
+  text-align: center;
+}
+
+.card-foto {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px 0px;
+  margin-top: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-foto {
+    width: 180px;
+    height: 227px;
+    margin-top: 13px;
+  }
+}
+
+.info {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.team {
+  font-weight: 700;
+  color: #dc56c5;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.start-date {
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.place {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .place {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+/*# sourceMappingURL=main.css.map */
