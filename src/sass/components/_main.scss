@@ -6,19 +6,16 @@
   font-size: $font-size-16;
   line-height: 1.25;
   color: $accent-color;
-  background: $search-bg-color;
+  background-color: $search-bg-color;
   backdrop-filter: blur(20px);
   border: none;
   cursor: pointer;
-  transition: background 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s,
-    transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s,
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s,
     box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 
   &:hover,
   &:focus {
-    background: rgba(220, 86, 198, 0.5);
-    transform: scale(1.1);
-    box-shadow: 0px 4px 25px rgba(231, 57, 217, 0.774);
+    box-shadow: 0 0 1px 1px $title-text-color;
     outline: transparent;
   }
 
@@ -29,18 +26,18 @@
 
 .input-block {
   position: relative;
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 2;
+  // width: 270px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // z-index: 2;
 }
-.form svg {
+.input-form svg {
   position: absolute;
   top: 14px;
   right: 30px;
 }
 @media screen and(max-width: 767px) {
-  .form:first-child {
+  .search-form {
     margin-bottom: 25px;
   }
 }

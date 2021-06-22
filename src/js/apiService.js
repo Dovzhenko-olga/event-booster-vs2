@@ -28,11 +28,11 @@ export default class NewApiService{
             .catch(error => console.log(error));
     }
 
-    fetchCountries() {
-    return fetch(`${BASE_URL}venues.json?size=50&apikey=${KEY}`)
+    fetchByCountries() {
+    return fetch(`${BASE_URL}events.json?countryCode=${this.searchQuery}&apikey=${KEY}`)
             .then(r => r.json())
             .then(({ _embedded }) => {
-                return  _embedded.venues;
+                return  _embedded.events;
             })
             .catch(error => console.log(error));
     }

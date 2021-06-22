@@ -4,7 +4,7 @@
       <a href="" class="logo"><img class="logo-img" src="./images/logo.png" alt="" /></a>
       <h1 class="header-txt">FIND BEST EVENTS AROUND THE WORLD</h1>
       <div class="searching-block container">
-        <form class="form search-form js-search-form">
+        <form class="input-form search-form js-search-form">
           <div class="input-block">
             <input type="text" class="form-control" placeholder="Start searching" autocomplete="off" />
             <svg width=12 height=12>
@@ -12,18 +12,20 @@
             </svg>
           </div>
         </form>
-        <div>
-        <form class="form js-country-form">
-          <div class="input-block">
-            <input type="text" class="form-control" placeholder="Choose country" autocomplete="off" />
-            <svg width=15 height=10>
-              <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
-            </svg>
-          </div>
-        </form>
-        <div class="country-block">
-          <ul class="drop-countries js-dropdown"></ul>
+        <div class="input-block js-country-form">
+        <select class="input-form form-control js-dropdown">
+            <option selected disabled>Choose country</option>
+        </select>
+        <svg class="select-icon" width=15 height=10>
+          <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+        </svg>
         </div>
+        <div class='choose-input'>
+          <span class='choose-country' id='select-country-btn'>Choose country</span>
+          <ul class='country-list'></ul>
+          <svg class="select-icon" width=15 height=10>
+            <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+          </svg>
         </div>
       </div>
     </div>

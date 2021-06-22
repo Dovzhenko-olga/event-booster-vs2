@@ -5,20 +5,15 @@ import NewsApiService from './apiService';
 const refs = getRefs();
 const newsApiService = new NewsApiService();
 
-export default function selectCountry(e, searchQuery, list) {
-  if (e.target.nodeName === 'LI') {
-    searchQuery.value = e.target.textContent;
-    list.innerHTML = '';
-    list.hidden = true;
-    refs.dropBgColor.hidden = true;
-
+export default function selectCountry(e, list) {
+    newsApiService.query = e.target.value;
+    // list.innerHTML = '<option selected disabled>Choose country</option>';
     clearContainer();
     fetchHits();
-  }
 }
 
 function fetchHits() {
-  newsApiService.fetchArticles().then(events => {
+  newsApiService.fetchByCountries().then(events => {
     appendMarkup(events);
   });
 }
